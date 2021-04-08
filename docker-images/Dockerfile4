@@ -1,0 +1,8 @@
+FROM centos
+ENV var1 1234
+RUN yum -y install httpd unzip
+ADD  https://github.com/mdn/beginner-html-site-styled/archive/refs/heads/gh-pages.zip /var/www/html/code.zip
+CMD apachectl -DFOREGROUND
+
+
+

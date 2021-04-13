@@ -12,6 +12,6 @@ services:
         image: nginx
         container_name: my-nginx2
         ports:
-            - "8096:80"   
+            - "8096:80"
 
 
